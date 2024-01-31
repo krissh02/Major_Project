@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>FarmTechSuite</title>
+    </head>
+    <body>
+        <div class="preloader">
+            <!-- <img id="img" src="/assets/img/rocket.gif" alt=""> -->
+            <!-- <img class="img1" src="/assets/img/letter_t" alt="">
+            <img src="/assets/img/letter_A.gif" alt="">
+            <img src="/assets/img/letter_S.gif" alt="">
+            <img src="/assets/img/letter_K.gif" alt=""> -->
+            <!-- <div class="header-revealer"></div>
+            <div class="loader-screen">
+            <div class="loader">
+                <div class="loader-1 bar"></div>
+                <div class="loader-2 bar"></div>
+            </div>
+            <div class="counter">
+                <div class="counter-1 digit">
+                    <div class="num">0</div>
+                    <div class="num num1offset1">1</div>
+                </div>
+                <div class="counter-2 digit">
+                    <div class="num">0</div>
+                    <div class="num num1offset2">1</div>
+                    <div class="num">2</div>
+                    <div class="num">3</div>
+                    <div class="num">4</div>
+                    <div class="num">5</div>
+                    <div class="num">6</div>
+                    <div class="num">7</div>
+                    <div class="num">8</div>
+                    <div class="num">9</div>
+                </div>
+                <div class="counter-3 digit">
+                    <div class="num">0</div>
+                    <div class="num">1</div>
+                    <div class="num">2</div>
+                    <div class="num">3</div>
+                    <div class="num">4</div>
+                    <div class="num">5</div>
+                    <div class="num">6</div>
+                    <div class="num">7</div>
+                    <div class="num">8</div>
+                    <div class="num">9</div>
+                </div>
+            </div>
+        </div> -->
+
+        </div>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <!-- LOGO -->
+            <nav class="nav container nav-extended N/A transparent z-depth-0">
+                <a href="#" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> FarmTechSuite
+                </a>
+                <!-- NAVBAR -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item features">
+                            <a href="#features" class="nav__link">Features
+                                <span class="material-icons dropdown-icon">
+                                    arrow_drop_down
+                                </span>
+                            </a>
+                            <ul class="dropdown">
+                                <li class="dropdown_item"><a href="chatbot.html" target="_blank" class="dropdown_link">Chatbot</a></li>
+                                <li class="dropdown_item"><a href="disease.html" target="_blank" class="dropdown_link">Disease Recognition</a></li>
+                                <li class="dropdown_item"><a href="weed_detection.html" target="_blank" class="dropdown_link">Weed Detection</a></li>
+                                <li class="dropdown_item"><a href="government_scheme.html" target="_blank" class="dropdown_link">Govenment Scheme</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item" style="width: auto;">
+                            <a href="#contact" class="nav__link">Contact Us</a>
+                        </li>
+                    </ul>
+                    <!-- CLOSE ICON FUCNTION -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <div class="translate">
+                        <div id="google_translate_element"></div>
+                    </div>
+
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+
+                <!-- <div class="translate">
+                    <div id="google_translate_element"></div>
+                </div> -->
+            </nav>
+            <!-- <div class="header-revealer"></div> -->
+        </header>
+
+        <!-- <div class="loader-screen">
+            <div class="loader">
+                <div class="loader-1 bar"></div>
+                <div class="loader-2 bar"></div>
+            </div>
+            <div class="counter">
+                <div class="counter-1 digit">
+                    <div class="num">0</div>
+                    <div class="num num1offset1">1</div>
+                </div>
+                <div class="counter-2 digit">
+                    <div class="num">0</div>
+                    <div class="num num1offset2">1</div>
+                    <div class="num">2</div>
+                    <div class="num">3</div>
+                    <div class="num">4</div>
+                    <div class="num">5</div>
+                    <div class="num">6</div>
+                    <div class="num">7</div>
+                    <div class="num">8</div>
+                    <div class="num">9</div>
+                </div>
+                <div class="counter-3 digit">
+                    <div class="num">0</div>
+                    <div class="num">1</div>
+                    <div class="num">2</div>
+                    <div class="num">3</div>
+                    <div class="num">4</div>
+                    <div class="num">5</div>
+                    <div class="num">6</div>
+                    <div class="num">7</div>
+                    <div class="num">8</div>
+                    <div class="num">9</div>
+                </div>
+            </div>
+        </div> -->
+
+        <main class="main">
+            <!-- <video autoplay loop muted src="/assets/video/bg_video.mp4" class="video"></video> -->
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="/assets/img/hill1.png" alt="" class="hill1">
+                <img src="/assets/img/hill2.png" alt="" class="hill2">
+                <img src="/assets/img/hill3.png" alt="" class="hill3">
+                <img src="/assets/img/hill4.png" alt="" class="hill4">
+                <img src="/assets/img/hill5.png" alt="" class="hill5">
+                <img src="/assets/img/tree.png" alt="" class="tree">
+                <h2 class="home_title">Cultivate Resilience, Protecting  <br> Plants for a Sustainable Tomorrow.</h2>
+                <img src="/assets/img/leaf.png" alt="" class="leaf">
+                <img src="/assets/img/plant.png" alt="" class="plant">
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="assets/img/about.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            About us
+                        </h2>
+
+                        <p class="about__description">
+                            In the tapestry of agriculture, farmers emerge as steadfast guardians, meticulously cultivating resilience in the soil and nurturing plants with unwavering care. Their commitment not only sustains the present harvest but lays the foundation for a bountiful and sustainable future, exemplifying the vital role they play in the delicate balance of our ecosystem.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FEATURES -->
+            <div class="features" id="features">
+                <div class="features_content Chatbot active">
+                    <h3>Chatbot</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui hic numquam molestias optio dolorum corrupti nulla. Distinctio, repellat quaerat!</p>
+                    <button>Read more</button>
+                </div>
+                <div class="features_content Disease_Recognition">
+                    <h3>Disease Recognition</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui hic numquam molestias optio dolorum corrupti nulla. Distinctio, repellat quaerat!</p>
+                    <button>Read more</button>
+                </div>
+                <div class="features_content Weed_Detection">
+                    <h3>Weed Detection</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui hic numquam molestias optio dolorum corrupti nulla. Distinctio, repellat quaerat!</p>
+                    <button>Read more</button>
+                </div>
+                <div class="features_content Government_Scheme">
+                    <h3>Government Scheme</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui hic numquam molestias optio dolorum corrupti nulla. Distinctio, repellat quaerat!</p>
+                    <button>Read more</button>
+                </div>
+                <div class="carousel-box">
+                    <h2>Features</h2>
+                    <div class="carousel">
+                        <div class="carousel-item" onclick="changebg('bg-chatbot','Chatbot')">
+                            <img src="https://resize.indiatvnews.com/en/resize/newbucket/1080_-/2023/05/2-2-1685015563.jpg" alt="">
+                            <!-- <h2>Chatbot</h2> -->
+                        </div>
+                        <div class="carousel-item" onclick="changebg('bg-disease_detection','Disease_Recognition')">
+                            <img src="https://www.hdwallpapers.in/download/closeup_view_yellow_flowers_bushes_grass_field_plants_path_sky_background_nature_wallpaper_4k_hd_nature-1080x1920.jpg" alt="">
+                            <!-- <h2>Chatbot</h2> -->
+                        </div>
+                        <div class="carousel-item" onclick="changebg('bg-weed_detection','Weed_Detection')">
+                            <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701681449.jpg" alt="">
+                            <!-- <h2>Chatbot</h2> -->
+                        </div>
+                        <div class="carousel-item" onclick="changebg('bg-government_scheme','Government_Scheme')">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8MO735BSyuKxqLOQKyxsTKBDqrIvd6zdXOg&usqp=CAU" alt="">
+                            <!-- <h2>Chatbot</h2> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- News Letter -->
+
+            <!--==================== QUESTIONS ====================-->
+            <section class="questions section" id="faqs">
+                <h2 class="section__title-center questions__title container">
+                    Some common questions were often asked
+                </h2>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    My flowers are falling off or dying?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What causes leaves to become pale?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What causes brown crispy leaves?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do i choose a plant?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do I change the pots?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Why are gnats flying around my plant?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class = "contact-section" id="contact">
+                <div class = "contact-bg">
+                  <h3>Get in Touch with Us</h3>
+                  <h2>Contact Us</h2>
+                  <div class = "line">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+          
+          
+                <div class = "contact-body">
+                  <div class = "contact-info">
+                    <div>
+                      <span class="contact-info-1"><i class = "fas fa-mobile-alt"></i></span>
+                      <span class="contact-info-1">Phone No.</span>
+                      <span class = "text">1-2392-23928-2</span>
+                    </div>
+                    <div>
+                      <span class="contact-info-1"><i class = "fas fa-envelope-open"></i></span>
+                      <span class="contact-info-1">E-mail</span>
+                      <span class = "text">mail@company.com</span>
+                    </div>
+                    <div>
+                      <span class="contact-info-1"><i class = "fas fa-map-marker-alt"></i></span>
+                      <span class="contact-info-1">Address</span>
+                      <span class = "text">India</span>
+                    </div>
+                    <div>
+                      <span class="contact-info-1"><i class = "fas fa-clock"></i></span>
+                      <span class="contact-info-1">Opening Hours</span>
+                      <span class = "text">24/7</span>
+                    </div>
+                  </div>
+          
+                  <div class = "contact-form">
+                    <form>
+                      <div>
+                        <input type = "text" class = "form-control" placeholder="First Name">
+                        <input type = "text" class = "form-control" placeholder="Last Name">
+                      </div>
+                      <div>
+                        <input type = "email" class = "form-control" placeholder="E-mail">
+                        <input type = "text" class = "form-control" placeholder="Phone">
+                      </div>
+                      <textarea rows = "5" placeholder="Message" class = "form-control"></textarea>
+                      <input type = "submit" class = "send-btn" value = "send message">
+                    </form>
+          
+                    <div>
+                      <img class="form-img" src = "https://miro.medium.com/v2/resize:fit:679/0*uiI5FtvNIYHMht9c.gif" alt = "">
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- <div class = "map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223700.1490386933!2d-97.11558670486288!3d28.829485511234168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864266db2e2dac3b%3A0xeee20d566f63267d!2sVictoria%2C%20TX%2C%20USA!5e0!3m2!1sen!2snp!4v1604921178092!5m2!1sen!2snp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div> -->
+          
+                <div class = "contact-footer">
+                  <h3>Follow Us</h3>
+                  <div class = "social-links">
+                    <a href = "#" class = "fab fa-facebook-f"></a>
+                    <a href = "#" class = "fab fa-twitter"></a>
+                    <a href = "#" class = "fab fa-instagram"></a>
+                    <a href = "#" class = "fab fa-linkedin"></a>
+                    <a href = "#" class = "fab fa-youtube"></a>
+                  </div>
+                  <p>&#169; TASK. All rigths reserved</p>
+                </div>
+                <!-- <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/yJg-Y5byMMw?si=zVMod4ixNCgVyNBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/yJg-Y5byMMw?si=zVMod4ixNCgVyNBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+              </section>
+        </main>
+
+    
+
+            <!-- <p class="footer__copy">&#169; TASK. All rigths reserved</p> -->
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/Draggable.min.js" integrity="sha512-o8v90Ete+a3felDNIvgHfQQmaqdx9s1T3nyK4Iy//Zn3Td7vpDRM5y4qlagfZ9qDPvvAA3CN3Wly0a2rEI078Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+
+            $(document).ready(function(){
+                $('.carousel').carousel();
+            });
+
+            const loader = document.querySelector(".preloader");
+            window.addEventListener("load",setTimeout(()=>{
+                loader.style.display = "none";
+
+            },2000)
+            )
+        </script>
+    </body>
+</html>
