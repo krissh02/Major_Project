@@ -11,6 +11,7 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
@@ -67,7 +68,7 @@
 
         </div>
         <!--==================== HEADER ====================-->
-        <header class="header" id="header">
+        <header class="header" id="header" data-aos="zoom-in" data-aos-delay="1.6">
             <!-- LOGO -->
             <nav class="nav container nav-extended N/A transparent z-depth-0">
                 <a href="#" class="nav__logo">
@@ -82,14 +83,14 @@
                         <li class="nav__item">
                             <a href="#about" class="nav__link">About</a>
                         </li>
-                        <li class="nav__item features">
+                        <li class="nav__item features1">
                             <a href="#features" class="nav__link">Features
-                                <span class="material-icons dropdown-icon">
+                                <!-- <span class="material-icons dropdown-icon">
                                     arrow_drop_down
-                                </span>
+                                </span> -->
                             </a>
                             <ul class="dropdown">
-                                <li class="dropdown_item"><a href="chatbot.html" target="_blank" class="dropdown_link">Chatbot</a></li>
+                                <li class="dropdown_item"><a href="/chatbot_app.py" target="_blank" class="dropdown_link">Chatbot</a></li>
                                 <li class="dropdown_item"><a href="disease.html" target="_blank" class="dropdown_link">Disease Recognition</a></li>
                                 <li class="dropdown_item"><a href="weed_detection.html" target="_blank" class="dropdown_link">Weed Detection</a></li>
                                 <li class="dropdown_item"><a href="government_scheme.html" target="_blank" class="dropdown_link">Govenment Scheme</a></li>
@@ -165,7 +166,7 @@
         <main class="main">
             <!-- <video autoplay loop muted src="/assets/video/bg_video.mp4" class="video"></video> -->
             <!--==================== HOME ====================-->
-            <section class="home" id="home">
+            <section class="home" id="home" data-aos="zoom-in" data-aos-delay="1.6">
                 <img src="/assets/img/hill1.png" alt="" class="hill1">
                 <img src="/assets/img/hill2.png" alt="" class="hill2">
                 <img src="/assets/img/hill3.png" alt="" class="hill3">
@@ -180,14 +181,14 @@
             <!--==================== ABOUT ====================-->
             <section class="about section container" id="about">
                 <div class="about__container grid">
-                    <img src="assets/img/about.png" alt="" class="about__img">
+                    <img src="assets/img/about.png" alt="" class="about__img" data-aos="fade-up">
 
                     <div class="about__data">
-                        <h2 class="section__title about__title">
+                        <h2 class="section__title about__title" data-aos="fade-left">
                             About us
                         </h2>
 
-                        <p class="about__description">
+                        <p class="about__description" data-aos="fade-right" data-aos-offset="450">
                             In the tapestry of agriculture, farmers emerge as steadfast guardians, meticulously cultivating resilience in the soil and nurturing plants with unwavering care. Their commitment not only sustains the present harvest but lays the foundation for a bountiful and sustainable future, exemplifying the vital role they play in the delicate balance of our ecosystem.
                         </p>
                     </div>
@@ -196,27 +197,27 @@
 
             <!-- FEATURES -->
             <div class="features" id="features">
-                <div class="features_content Chatbot active">
+                <div class="features_content Chatbot active" data-aos="zoom-in-up">
                     <h3>Chatbot</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui hic numquam molestias optio dolorum corrupti nulla. Distinctio, repellat quaerat!</p>
                     <button>Read more</button>
                 </div>
-                <div class="features_content Disease_Recognition">
+                <div class="features_content Disease_Recognition" data-aos="zoom-in-up">
                     <h3>Disease Recognition</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui hic numquam molestias optio dolorum corrupti nulla. Distinctio, repellat quaerat!</p>
                     <button>Read more</button>
                 </div>
-                <div class="features_content Weed_Detection">
+                <div class="features_content Weed_Detection" data-aos="zoom-in-up">
                     <h3>Weed Detection</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui hic numquam molestias optio dolorum corrupti nulla. Distinctio, repellat quaerat!</p>
                     <button>Read more</button>
                 </div>
-                <div class="features_content Government_Scheme">
+                <div class="features_content Government_Scheme" data-aos="zoom-in-up">
                     <h3>Government Scheme</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui hic numquam molestias optio dolorum corrupti nulla. Distinctio, repellat quaerat!</p>
                     <button>Read more</button>
                 </div>
-                <div class="carousel-box">
+                <div class="carousel-box" data-aos="flip-left" data-aos-duration="1900">
                     <h2>Features</h2>
                     <div class="carousel">
                         <div class="carousel-item" onclick="changebg('bg-chatbot','Chatbot')">
@@ -249,8 +250,8 @@
                 </h2>
 
                 <div class="questions__container container grid">
-                    <div class="questions__group">
-                        <div class="questions__item">
+                    <div class="questions__group" data-aos-duration="1900">
+                        <div class="questions__item" data-aos="slide-right">
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
@@ -266,7 +267,7 @@
                             </div>
                         </div>
 
-                        <div class="questions__item">
+                        <div class="questions__item" data-aos="slide-right">
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
@@ -282,7 +283,7 @@
                             </div>
                         </div>
 
-                        <div class="questions__item">
+                        <div class="questions__item" data-aos="slide-right">
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
@@ -299,8 +300,8 @@
                         </div>
                     </div>
 
-                    <div class="questions__group">
-                        <div class="questions__item">
+                    <div class="questions__group" data-aos-duration="1900">
+                        <div class="questions__item" data-aos="slide-left">
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
@@ -316,7 +317,7 @@
                             </div>
                         </div>
 
-                        <div class="questions__item">
+                        <div class="questions__item" data-aos="slide-left">
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
@@ -332,7 +333,7 @@
                             </div>
                         </div>
 
-                        <div class="questions__item">
+                        <div class="questions__item" data-aos="slide-left">
                             <header class="questions__header">
                                 <i class="ri-add-line questions__icon"></i>
                                 <h3 class="questions__item-title">
@@ -365,7 +366,7 @@
           
           
                 <div class = "contact-body">
-                  <div class = "contact-info">
+                  <div class = "contact-info" data-aos="fade-down">
                     <div>
                       <span class="contact-info-1"><i class = "fas fa-mobile-alt"></i></span>
                       <span class="contact-info-1">Phone No.</span>
@@ -441,8 +442,10 @@
         <script src="assets/js/scrollreveal.min.js"></script>
         
         <!--=============== MAIN JS ===============-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/Draggable.min.js" integrity="sha512-o8v90Ete+a3felDNIvgHfQQmaqdx9s1T3nyK4Iy//Zn3Td7vpDRM5y4qlagfZ9qDPvvAA3CN3Wly0a2rEI078Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -460,6 +463,14 @@
 
             },2000)
             )
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset: 350, 
+            // delay: 0,
+            duration: 1500,
+          });
         </script>
     </body>
 </html>

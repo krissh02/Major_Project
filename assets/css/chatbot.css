@@ -1,21 +1,145 @@
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+
+
+body,
+button,
+input,
+textarea{
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Merriweather', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+body{
+  margin: 3.5rem 0 0 0;
+  /* background-color: hsl(152, 0%, 100%); */
+  background-color: rgb(236, 234, 234);
+  /* color: hsl(152, 4%, 35%); */
+  color: rgb(53, 88, 52);
+  transition: .4s; /*For animation dark mode*/
+  overflow-x: hidden;
+  font-weight: 550;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+h1,h2,h3{
+  color: rgb(53, 88, 52);
+  font-weight: 600;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== THEME ===============*/
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+  --first-color-dark: hsl(152, 8%, 20%);
+  --title-color: hsl(152, 4%, 95%);
+  --text-color: hsl(152, 4%, 75%);
+  --body-color: hsl(152, 8%, 12%);
+  --container-color: hsl(152, 8%, 16%);
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme{
+  color: hsl(152, 8%, 20%);
+  /* color: hsl(152, 4%, 75%); */
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.nav__btns{
+  display: inline-flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+/*========== 
+Color changes in some parts of 
+the website, in dark theme 
+==========*/
+
+/* Black color */
+.dark-theme .questions, 
+.dark-theme .section__title-center, 
+.dark-theme .header, .dark-theme .about,
+.dark-theme .contact-body, 
+.dark-theme .contact-footer, 
+.dark-theme .contact-footer h3, 
+.dark-theme .social-links a, 
+.dark-theme .contact-footer p, 
+.dark-theme .about .about__container .about__data h2,
+.dark-theme .header .nav a,
+.dark-theme .header .nav a i,
+.dark-theme .header .nav .nav__btns i,
+.dark-theme .home{
+  background-color: hsl(152, 8%, 20%);
+  /* background-color: rgb(20, 40, 29); */
+  /* background-color: #000; */
+  /* color: rgb(153, 132, 212); */
+  color: rgb(202, 168, 245);
+}
+.dark-theme .scroll-header{
+  box-shadow: 0 1px 4px hsla(152, 4%, 4%, .3);
+}
+.VIpgJd-ZVi9od-ORHb-OEVmcd{
+  display: none;
+}
+#google_translate_element img{
+  display: none !important;
+}
+
+.goog-te-gadget{
+  font-family: 'Merriweather', serif !important;
+  font-size: 1rem !important;
+}
+.goog-te-gadget-simple{
+  /* height: 2rem !important; */
+  color: rgb(53, 88, 52) !important;
+  background-color: transparent !important; 
+  border: none !important;
+  /* border-radius: 50px !important; */
+}
+.goog-te-gadget-simple:hover{
+  background-color: #FFF !important;
+}
+#google_translate_element select{
+  background:#f6edfd;
+  color:black;
+  border: none;
+  border-radius:3px;
+  padding:6px 8px
   }
-  
-  html{
-    scroll-behavior: smooth;
-  }
-  
-  body{
-    font-family: 'Poppins', sans-serif;
-    font-size: .938rem;
-    margin: var(3.5rem) 0 0 0;
-    background-color: hsl(152, 0%, 100%);
-    color: hsl(152, 4%, 35%);
-    transition: .4s; /*For animation dark mode*/
-  }
+.goog-te-gadget-icon{
+  display:none !important;
+}
 
 /*=============== HEADER ===============*/
 .header{

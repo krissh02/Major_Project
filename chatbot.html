@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/chatbot.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+    </head>
 <body>
     <header class="header" id="header">
         <!-- LOGO -->
@@ -22,13 +23,13 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
+                        <a href="/index.html" class="nav__link active-link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
+                        <a href="/index.html" class="nav__link">About</a>
                     </li>
                     <li class="nav__item features">
-                        <a href="#features" class="nav__link">Features
+                        <a href="/index.html" class="nav__link">Features
                             <span class="material-icons dropdown-icon">
                                 arrow_drop_down
                             </span>
@@ -41,10 +42,7 @@
                         </ul>
                     </li>
                     <li class="nav__item">
-                        <a href="#products" class="nav__link">News letter</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact Us</a>
+                        <a href="/index.html" class="nav__link">Contact Us</a>
                     </li>
                 </ul>
                 <!-- CLOSE ICON FUCNTION -->
@@ -54,6 +52,9 @@
             </div>
 
             <div class="nav__btns">
+                <div class="translate">
+                    <div id="google_translate_element"></div>
+                </div>
                 <!-- Theme change button -->
                 <i class="ri-moon-line change-theme" id="theme-button"></i>
 
@@ -63,5 +64,9 @@
             </div>
         </nav>
     </header>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/chatbot.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

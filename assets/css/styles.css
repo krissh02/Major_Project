@@ -240,6 +240,13 @@ the website, in dark theme
 .goog-te-gadget-simple:hover{
   background-color: #FFF !important;
 }
+#google_translate_element select{
+  background:#f6edfd;
+  color:black;
+  border: none;
+  border-radius:3px;
+  padding:6px 8px
+  }
 .goog-te-gadget-icon{
   display:none !important;
 }
@@ -391,12 +398,12 @@ the website, in dark theme
   color: black;
   text-decoration: none;
 }
-.features:hover .dropdown{
+.features1:hover .dropdown{
   display: flex;
   flex-direction: column;
   background-color: #e1e0e0;
 }
-.features .nav__link{
+.features1 .nav__link{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -562,10 +569,10 @@ the website, in dark theme
 #features::before{
   position: absolute;
   content: '';
-  top: 181%;
+  /* top: 181%; */
   left: 0;
   background: rgba(0, 0, 0, 0.7);
-  height: 100%;
+  height: 100.5%;
   width: 100%;
 }
 
@@ -981,7 +988,17 @@ button:hover{
 .social-links{
   display: flex;
   justify-content: center;
+  /* animation: social 4s ease-in-out infinite;
+  white-space: wrap; */
 }
+/* @keyframes social{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+} */
 .social-links a{
   text-decoration: none;
   width: 40px;
@@ -989,6 +1006,7 @@ button:hover{
   color: hsl(152, 24%, 32%);
   border: 2px solid hsl(152, 24%, 32%);;
   border-radius: 50%;
+  /* display: inline-block; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1134,7 +1152,7 @@ button:hover{
     position: absolute;
     height: 30px;
     font-size: 1rem;
-    top: 30%;
+    top: 40%;
   }
   .home img{
     position: absolute;
@@ -1308,7 +1326,7 @@ button:hover{
 }
 
 /* For medium devices */
-@media screen and (max-width: 576px){
+@media screen and (321px <= width <= 567px ){
 
   /* .product__description{
     padding: 0 4rem;
@@ -1322,11 +1340,6 @@ button:hover{
   .footer__subscribe{
     width: 400px;
   } */
-  html,body{
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-  }
   .preloader{
     background-size: contain;
   }
@@ -1369,18 +1382,18 @@ button:hover{
 /* home */
 
   .home{
+    margin-top: 0;
     position: relative;
-    min-height: 44vh;
+    min-height: 256px;
     /* min-height: auto; */
-    width: 100%;
+    width: auto;
     padding: 0 0;
   }
   .home .home_title{
     position: absolute;
     /* height: 60px; */
-    font-size: 1.4rem;
-    top: auto;
-    bottom: auto;
+    font-size: 1.3rem;
+    /* top: 40%; */
   }
   .home img{
     position: absolute;
@@ -1414,7 +1427,7 @@ button:hover{
   }
   /* features */
   #features{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1424,9 +1437,9 @@ button:hover{
   #features::before{
     position: absolute;
     content: '';
-    height: 121.5%;
+    height: 119%;
     width: 100%;
-    top: 148%;
+    /* top: 123.5%; */
   }
   .features_content{
     position: relative;
@@ -1448,9 +1461,9 @@ button:hover{
   }
   #features .carousel-box{
     height: 400px;
-    width: 400px;
+    width: 310px;
     margin: 2rem 0;
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
   }
   #features .carousel-box h2{
     font-size: 2rem;
@@ -1458,11 +1471,11 @@ button:hover{
   }
   .carousel .carousel-item{
     height: 200px;
-    width: 130px;
+    width: 110px;
   }
   .carousel .carousel-item img{
-    margin-top: 4rem;
-    height: 250px;
+    margin-top: 6rem;
+    height: 220px;
     /* padding-right: 0.6rem; */
   }
   /* question */
@@ -1492,7 +1505,7 @@ button:hover{
   }
   /* contact us */
   .contact-bg{
-    min-height: 70px;
+    height: 20vh;
     width: 100%;
   }
   .contact-bg h3{
@@ -1524,7 +1537,7 @@ button:hover{
   .contact-info div{
     width: 50%;
   }
-  .contact-info .contact-info-1{
+  .contact-info div span:nth-child(2){
     font-size: 0.9rem;
   }
   .contact-form{
@@ -1554,7 +1567,7 @@ button:hover{
     font-size: 0.9rem;
   }
   .contact-footer p{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .contact-footer .social-links .fab{
     animation: social ease-in-out infinite right;

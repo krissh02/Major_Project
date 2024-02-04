@@ -1,6 +1,6 @@
 // Google Translate
 function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    new google.translate.TranslateElement({includedLanguages: 'en,gu,hi,hi,kn,ml,mr,ta,te,ur,bn,bh,or,pa,sa,sd,',layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
   }
 
 // preloader
@@ -94,12 +94,6 @@ document.addEventListener("DomContentLoaded", function(){
         delay:7.5,
         ease: "power2.inOut",
     });
-
-    // to remove iframe video in the contact footer
-    setTimeout(hideDiv, 1000); //Instead of 10000 put your video's length, in milliseconds  
-    function hideDiv() {
-        document.querySelector(".iframe").style.display="none";    
-    }
 
 // Home
 const text = document.querySelector(".home_title");
@@ -267,17 +261,58 @@ themeButton.addEventListener('click', () => {
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    // reset: true
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '60px',
+//     duration: 2500,
+//     delay: 400,
+//     // reset: true
+// })
+
+// For smooth scrolling
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
 })
 
-sr.reveal(`.home__data`)
-sr.reveal(`.home__img`, {delay: 500})
-sr.reveal(`.home__social`, {delay: 600})
-sr.reveal(`.about__img`,{origin: 'left'})
-sr.reveal(`.about__data`,{origin: 'right'})
-sr.reveal(`.questions__group, .footer`,{interval: 100})
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+// Animation code
+
+// about page
+// gsap.to(".about__img",{
+//     y : 50,
+//     // opacity : 0,
+//     duration : 1,
+//     scrollTrigger:{
+//         trigger:".about__img",
+//         scroller : ".main",
+//         markers : true,
+//         start : "top 70%",
+//         end : "top 65%",
+//         scrub: 2,
+//     }
+// })
+// gsap.from(".about__description",{
+//     x:-700,
+//     duration:0.5,
+//     scrollTrigger:{
+//         trigger:".about__description",
+//         start:"top 50vh",
+//         end:"top 70vh",
+//         toggleActions:"play reverse reverse complete",
+//     }
+// })
+
+// sr.reveal(`.home__data`)
+// sr.reveal(`.home__img`, {delay: 500})
+// sr.reveal(`.home__social`, {delay: 600})
+// sr.reveal(`.about__img`,{origin: 'left'})
+// sr.reveal(`.about__data`,{origin: 'right'})
+// sr.reveal(`.questions__group, .footer`,{interval: 100})
